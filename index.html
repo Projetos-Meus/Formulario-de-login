@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../formulario-html/fontawesome-free-5.15.1-web/css/all.css">
+  <link rel="stylesheet" href="../formulario-html/css/style.css">
+</head>
+<body>
+  <form>
+    <h3>Faça o Login</h3>
+    <input id="email" type="text" name="email" placeholder="Seu e-mail..">
+    <input id="password" type="password" name="senha" placeholder="Sua senha..">
+    <input type="submit" name="acao" value="Enviar">
+
+    <a href="#">
+    <i class="fab fa-instagram-square fa-code fa-2x"></i></a>
+
+    <a href="">
+    <i class="fab fa-facebook-square fa-code fa-2x"></i></a>
+
+    <a href="">
+    <i class="fab fa-linkedin fa-code fa-2x"></i></a>
+  </form>
+
+  <script>
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+
+    email.addEventListener('focus',()=> {
+      email.style.borderColor = "#4a5f6a";
+    });
+
+    email.addEventListener('blur',()=> {
+      email.style.borderColor = "#ccc";
+    });
+
+    password.addEventListener('focus',()=> {
+      password.style.borderColor = "#4a5f6a";
+    });
+
+    password.addEventListener('blur',()=> {
+      password.style.borderColor = "#ccc";
+    });
+  </script>
+</body>
+</html>
